@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Sholawat Player</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Style Library -->
+        <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css' >
+    </head>
+    <!-- Full Screen Event -->
+    <body onload="init()" id="appin" onclick="openFullscreen();" onload="openFullscreen();" onmouseover="openFullscreen();" oncontextmenu="openFullscreen()" ondrag="select()">
+       <section id="page">
+          <div class="container">
+             <nav class="menu">
+			     										<audio id="audio" controls="controls" onerror="alert('Could not play audio in folder audio name file ' + this.src + '!');" onended="skip()">
+						   										HTML5 MP3 audio required (Chrome, Safari, IE 9?)
+										     			</audio>
+             </nav>
+          </div>
+          <div class="pane" id="home">
+                 	<h1 class="frame title">Simple Audio Player</h1>
+              			<div class="frame">
+																				<h1 class="title"> List Player</h1>
+			   															<ul class="list">
+																		   			<li>sample-1</li>
+													   								<li>sample-2</li>
+																	   				<li>sample-3</li>
+																   		</ul>
+                </div>
+             </div>
+         </section>
+        <!-- Functions Library -->
+       <script src="assets/js/main.js"></script>
+    </body>
+ </html>
